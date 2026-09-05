@@ -1,0 +1,4 @@
+fastp
+gzip
+python
+sqlite3
