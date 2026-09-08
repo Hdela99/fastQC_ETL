@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE EXPERIMENT_PACKAGE_SET>
+<EXPERIMENT_PACKAGE_SET>
+  <EXPERIMENT_PACKAGE>
+    <EXPERIMENT accession="SRX18523525" alias="patientMK53_HQ">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRX18523525</PRIMARY_ID>
+      </IDENTIFIERS>
+      <TITLE>Canine feces</TITLE>
+      <STUDY_REF accession="SRP411612">
+        <IDENTIFIERS>
+          <PRIMARY_ID>SRP411612</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioProject">PRJNA908720</EXTERNAL_ID>
+        </IDENTIFIERS>
+      </STUDY_REF>
+      <DESIGN>
+        <DESIGN_DESCRIPTION>For viral metagenomic analysis,from 2020 to 2021, 840 fecal samples of healthy dogs, 170 fecal samples of diseased dogs were collected from Yuzhu Tibetan Autonomous Prefecture of Qinghai Province, China and 840 fecal samples of healthy dogs and 180 fecal samples of diseased dogs were collected from Gulo Tibetan Autonomous Prefecture of Qinghai Province, China, for a total of 2030 samples. Samples were randomized faccording to region and level of health.The fecal samples were individually homogenized with a mortar and pestle, resuspended in 1 mL DPBS, and then frozen and thawed rapidly three times on dry-ice. The supernatants were then collected after centrifugation (10 min, 15,000 g). Supernatants were filtered through a 0.45-mm filter (Millipore) to remove eukaryotic- and bacterial cell-sized particles, and 200 uL of supernatant from each pool was then subjected to a mixture of nuclease enzymes to reduce the concentration of free (non-viral encapsidated) nucleic acids. Remaining total nucleic acid was then isolated using QIAamp MinElute Virus Spin Kit according to manufacturer's protocol. One hundred and ninety-seven libraries were then constructed using Nextera XT DNA Sample Preparation Kit (Illumina) and sequenced using the Illumina NovaSeq 6000 platform with 250 bases paired ends with dual barcoding for each pool. A total of three negative control libraries were constructed and also sequenced using the Illumina NovaSeq 6000 platform.</DESIGN_DESCRIPTION>
+        <SAMPLE_DESCRIPTOR accession="SRS15977604">
+          <IDENTIFIERS>
+            <PRIMARY_ID>SRS15977604</PRIMARY_ID>
+            <EXTERNAL_ID namespace="BioSample">SAMN32027925</EXTERNAL_ID>
+          </IDENTIFIERS>
+        </SAMPLE_DESCRIPTOR>
+        <LIBRARY_DESCRIPTOR>
+          <LIBRARY_NAME>patientMK53_HQ</LIBRARY_NAME>
+          <LIBRARY_STRATEGY>WGS</LIBRARY_STRATEGY>
+          <LIBRARY_SOURCE>METAGENOMIC</LIBRARY_SOURCE>
+          <LIBRARY_SELECTION>RANDOM PCR</LIBRARY_SELECTION>
+          <LIBRARY_LAYOUT>
+            <PAIRED/>
+          </LIBRARY_LAYOUT>
+        </LIBRARY_DESCRIPTOR>
+      </DESIGN>
+      <PLATFORM>
+        <ILLUMINA>
+          <INSTRUMENT_MODEL>Illumina NovaSeq 6000</INSTRUMENT_MODEL>
+        </ILLUMINA>
+      </PLATFORM>
+    </EXPERIMENT>
+    <SUBMISSION lab_name="school of medicine" center_name="Jiangsu University" accession="SRA1554968" alias="SUB12368920">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRA1554968</PRIMARY_ID>
+        <SUBMITTER_ID namespace="Jiangsu University">SUB12368920</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SUBMISSION>
+    <Organization type="institute">
+      <Name>Jiangsu University</Name>
+      <Address postal_code="212000">
+        <Department>school of medicine</Department>
+        <Institution>Jiangsu University</Institution>
+        <Street>Xiangshan</Street>
+        <City>Zhenjiang</City>
+        <Sub>Jiangsu</Sub>
+        <Country>China</Country>
+      </Address>
+      <Contact email="j2521555180@outlook.com">
+        <Address postal_code="212000">
+          <Department>school of medicine</Department>
+          <Institution>Jiangsu University</Institution>
+          <Street>Xiangshan</Street>
+          <City>Zhenjiang</City>
+          <Sub>Jiangsu</Sub>
+          <Country>China</Country>
+        </Address>
+        <Name>
+          <First>Xiaojie</First>
+          <Last>Jiang</Last>
+        </Name>
+      </Contact>
+    </Organization>
+    <STUDY center_name="BioProject" alias="PRJNA908720" accession="SRP411612">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRP411612</PRIMARY_ID>
+        <EXTERNAL_ID namespace="BioProject" label="primary">PRJNA908720</EXTERNAL_ID>
+      </IDENTIFIERS>
+      <DESCRIPTOR>
+        <STUDY_TITLE>canine metagenome Genome sequencing</STUDY_TITLE>
+        <STUDY_TYPE existing_study_type="Whole Genome Sequencing"/>
+        <STUDY_ABSTRACT>For viral metagenomic analysis,from 2020 to 2021, 780 fecal samples of healthy dogs, 170 fecal samples of diseased dogs were collected from Yuzhu Tibetan Autonomous Prefecture of Qinghai Province, China and 840 fecal samples of healthy dogs and 180 fecal samples of diseased dogs were collected from Gulo Tibetan Autonomous Prefecture of Qinghai Province, China, for a total of 1970 samples. Samples were randomized faccording to region and level of health.The fecal samples were individually homogenized with a mortar and pestle, resuspended in 1 mL DPBS, and then frozen and thawed rapidly three times on dry-ice. The supernatants were then collected after centrifugation (10 min, 15,000 g). Supernatants were filtered through a 0.45-mm filter (Millipore) to remove eukaryotic- and bacterial cell-sized particles, and 200 uL of supernatant from each pool was then subjected to a mixture of nuclease enzymes to reduce the concentration of free (non-viral encapsidated) nucleic acids. Remaining total nucleic acid was then isolated using QIAamp MinElute Virus Spin Kit according to manufacturer's protocol. One hundred and ninety-seven libraries were then constructed using Nextera XT DNA Sample Preparation Kit (Illumina) and sequenced using the MiSeq Illumina platform with 250 bases paired ends with dual barcoding for each pool.</STUDY_ABSTRACT>
+        <CENTER_PROJECT_NAME>canine metagenome</CENTER_PROJECT_NAME>
+      </DESCRIPTOR>
+    </STUDY>
+    <SAMPLE alias="Canine" accession="SRS15977604">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS15977604</PRIMARY_ID>
+        <EXTERNAL_ID namespace="BioSample">SAMN32027925</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="pda|j2521555180@outlook.com" label="Sample name">Canine</SUBMITTER_ID>
+      </IDENTIFIERS>
+      <SAMPLE_NAME>
+        <TAXON_ID>2034148</TAXON_ID>
+        <SCIENTIFIC_NAME>canine metagenome</SCIENTIFIC_NAME>
+      </SAMPLE_NAME>
+      <SAMPLE_ATTRIBUTES>
+        <SAMPLE_ATTRIBUTE>
+          <TAG>host</TAG>
+          <VALUE>Canine</VALUE>
+        </SAMPLE_ATTRIBUTE>
+        <SAMPLE_ATTRIBUTE>
+          <TAG>isolation_source</TAG>
+          <VALUE>Canine feces</VALUE>
+        </SAMPLE_ATTRIBUTE>
+        <SAMPLE_ATTRIBUTE>
+          <TAG>collection_date</TAG>
+          <VALUE>2020/2021</VALUE>
+        </SAMPLE_ATTRIBUTE>
+        <SAMPLE_ATTRIBUTE>
+          <TAG>geo_loc_name</TAG>
+          <VALUE>China:Yushu,Qinghai/Guoluo,Qinghai</VALUE>
+        </SAMPLE_ATTRIBUTE>
+        <SAMPLE_ATTRIBUTE>
+          <TAG>lat_lon</TAG>
+          <VALUE>missing</VALUE>
+        </SAMPLE_ATTRIBUTE>
+        <SAMPLE_ATTRIBUTE>
+          <TAG>BioSampleModel</TAG>
+          <VALUE>Metagenome or environmental</VALUE>
+        </SAMPLE_ATTRIBUTE>
+      </SAMPLE_ATTRIBUTES>
+    </SAMPLE>
+    <Pool>
+      <Member member_name="" accession="SRS15977604" sample_name="Canine" spots="28485" bases="12956982" tax_id="2034148" organism="canine metagenome">
+        <IDENTIFIERS>
+          <PRIMARY_ID>SRS15977604</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMN32027925</EXTERNAL_ID>
+        </IDENTIFIERS>
+      </Member>
+    </Pool>
+    <RUN_SET runs="1" bases="12956982" spots="28485" bytes="4491870">
+      <RUN accession="SRR22560139" alias="patientMK53_HQ_R1.fq.gz" total_spots="28485" total_bases="12956982" size="4491870" load_done="true" published="2022-12-07 07:51:16" is_public="true" cluster_name="public" has_taxanalysis="1" static_data_available="1">
+        <IDENTIFIERS>
+          <PRIMARY_ID>SRR22560139</PRIMARY_ID>
+          <SUBMITTER_ID namespace="SUB12368920" label="16">patientMK53_HQ_R1.fq.gz</SUBMITTER_ID>
+        </IDENTIFIERS>
+        <EXPERIMENT_REF accession="SRX18523525">
+          <IDENTIFIERS>
+            <SUBMITTER_ID namespace="SUB12368920">patientMK53_HQ</SUBMITTER_ID>
+          </IDENTIFIERS>
+        </EXPERIMENT_REF>
+        <Pool>
+          <Member member_name="" accession="SRS15977604" sample_name="Canine" spots="28485" bases="12956982" tax_id="2034148" organism="canine metagenome">
+            <IDENTIFIERS>
+              <PRIMARY_ID>SRS15977604</PRIMARY_ID>
+              <EXTERNAL_ID namespace="BioSample">SAMN32027925</EXTERNAL_ID>
+            </IDENTIFIERS>
+          </Member>
+        </Pool>
+        <SRAFiles>
+          <SRAFile cluster="public" filename="patientMK53_HQ_R1.fq.gz" size="3001103" date="2022-12-07 07:48:45" md5="2e33b2147fb3f118c0709e9808ba5a0a" version="1" semantic_name="fastq" supertype="Original" sratoolkit="0">
+            <Alternatives url="s3://sra-pub-src-16/SRR22560139/patientMK53_HQ_R1.fq.gz.1" free_egress="-" access_type="Use Cloud Data Delivery" org="AWS"/>
+          </SRAFile>
+          <SRAFile cluster="public" filename="patientMK53_HQ_R2.fq.gz" size="2933617" date="2022-12-07 07:48:43" md5="24b5f3adff0fdbdf87e837d7eb0b56fc" version="1" semantic_name="fastq" supertype="Original" sratoolkit="0">
+            <Alternatives url="s3://sra-pub-src-16/SRR22560139/patientMK53_HQ_R2.fq.gz.1" free_egress="-" access_type="Use Cloud Data Delivery" org="AWS"/>
+          </SRAFile>
+          <SRAFile cluster="public" filename="SRR22560139" url="https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR22560139/SRR22560139" size="4493397" date="2022-12-07 07:48:55" md5="2528b6184c63596065556321694c6b75" version="1" semantic_name="SRA Normalized" supertype="Primary ETL" sratoolkit="1">
+            <Alternatives url="https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR22560139/SRR22560139" free_egress="worldwide" access_type="anonymous" org="AWS"/>
+          </SRAFile>
+          <SRAFile cluster="public" filename="SRR22560139.lite" url="https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos8/sra-pub-zq-820/SRR022/22560/SRR22560139/SRR22560139.lite.1" size="3391521" date="2022-12-07 08:35:10" md5="07de0940e901f2b8502b4382303b0b10" version="1" semantic_name="SRA Lite" supertype="Primary ETL" sratoolkit="1">
+            <Alternatives url="https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos8/sra-pub-zq-820/SRR022/22560/SRR22560139/SRR22560139.lite.1" free_egress="worldwide" access_type="anonymous" org="NCBI"/>
+            <Alternatives url="s3://sra-pub-zq-9/SRR22560139/SRR22560139.lite.1" free_egress="s3.us-east-1" access_type="aws identity" org="AWS"/>
+            <Alternatives url="gs://sra-pub-zq-105/SRR22560139/SRR22560139.lite.1" free_egress="gs.us-east1" access_type="gcp identity" org="GCP"/>
+          </SRAFile>
+        </SRAFiles>
+        <CloudFiles>
+          <CloudFile filetype="fastq" provider="s3" location="s3.us-east-1"/>
+          <CloudFile filetype="run" provider="s3" location="s3.us-east-1"/>
+          <CloudFile filetype="run.zq" provider="gs" location="gs.us-east1"/>
+          <CloudFile filetype="run.zq" provider="s3" location="s3.us-east-1"/>
+        </CloudFiles>
+        <Statistics nreads="2" nspots="28485">
+          <Read index="0" count="28485" average="230.25" stdev="48.27"/>
+          <Read index="1" count="28485" average="224.62" stdev="58.85"/>
+        </Statistics>
+        <Databases>
+          <Database>
+            <Table name="SEQUENCE">
+              <Statistics source="meta">
+                <Rows count="28485"/>
+                <Elements count="12956982"/>
+              </Statistics>
+            </Table>
+          </Database>
+        </Databases>
+        <Bases cs_native="false" count="12956982">
+          <Base value="A" count="3005591"/>
+          <Base value="C" count="3469320"/>
+          <Base value="G" count="3474487"/>
+          <Base value="T" count="3007584"/>
+          <Base value="N" count="0"/>
+        </Bases>
+      </RUN>
+    </RUN_SET>
+  </EXPERIMENT_PACKAGE>
+</EXPERIMENT_PACKAGE_SET>
