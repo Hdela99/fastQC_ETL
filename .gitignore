@@ -1,6 +1,18 @@
 #Personal
 /Personal
 *Personal
+
+#DB stuff
+db/*.db
+
+#Large files
+data/FASTQ/*/*.fastq.gz
+data/FASTQ/*/*.trimmed.fastq.gz
+*.sra
+data/*
+
+#.tmp
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

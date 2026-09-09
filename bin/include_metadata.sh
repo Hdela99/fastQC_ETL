@@ -2,7 +2,11 @@
 set -e
 
 SRR="$1"
-OUT_DIR="../data/metadata/${SRR}"
+if [-z "$PROJECT_ROOT" ]; then
+    PROJECT_ROOT="$(cd "(dirname "$0")/.." && pwd)"
+fi
+
+OUT_DIR="${PROJECT_ROOT}/data/metadata/${SRR}"
 mkdir -p "$OUT_DIR"
 
 echo "=== pulling metadata as xml file for ${SRR} ==="

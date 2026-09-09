@@ -2,8 +2,12 @@
 set -e
 SRR="$1"
 THREADS="${2:-4}"
-OUT_DIR="../data/FASTQ/${SRR}"
-TMP_DIR="../tmp"
+if [-z "$PROJECT_ROOT" ]; then
+    PROJECT_ROOT="$(cd "(dirname "$0")/.." && pwd)"
+fi
+
+OUT_DIR="${PROJECT_ROOT}/data/FASTQ/${SRR}"
+TMP_DIR="${PROJECT_ROOT}/tmp"
 mkdir -p "$OUT_DIR"
 mkdir -p "$TMP_DIR"
 
