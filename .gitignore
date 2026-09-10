@@ -4,6 +4,7 @@
 
 #DB stuff
 db/*.db
+db/*
 
 #Large files
 data/FASTQ/*/*.fastq.gz

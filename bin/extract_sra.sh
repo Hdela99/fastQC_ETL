@@ -2,7 +2,7 @@
 set -e
 SRR="$1"
 THREADS="${2:-4}"
-if [-z "$PROJECT_ROOT" ]; then
+if [ -z "$PROJECT_ROOT" ]; then
     PROJECT_ROOT="$(cd "(dirname "$0")/.." && pwd)"
 fi
 

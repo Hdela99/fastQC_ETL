@@ -36,8 +36,8 @@ echo "[4/5] Loading QC metrics into database..."
 python3 "${PROJECT_ROOT}/src/load_qc_into_db.py" "${SRR}" "${REPORT_JSON}"
 
 # --- Step 5: (Optional) Run Kraken2 for viral identification ---
-# echo "[5/5] Running Kraken2 taxonomic classification..."
-# bash "${PROJECT_ROOT}/bin/run_kraken.sh" "${SRR}" "${THREADS}"
+ echo "[5/5] Running Kraken2 taxonomic classification..."
+ bash "${PROJECT_ROOT}/bin/run_kraken.sh" "${SRR}" "${THREADS}"
 
 echo "========================================"
 echo "Pipeline finished successfully for ${SRR}"
