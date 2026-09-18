@@ -1,7 +1,7 @@
 import sqlite3
 import json
 import sys
-import os
+import csv
 from pathlib import Path
 '''
 CREATE TABLE IF NOT EXISTS taxonomic_abundance (
@@ -32,10 +32,16 @@ columns of the kraken_report.txt
     S: Species
 5: NCBI Taxonomic ID num
 6: Scientific name.
+
+We want to:
+Extract-> Open report, iterate line by line parsing each line into the 6 tab separated fields. 
+Transform-> Convert % to floats, Converts counts and Taxonomic ID to ints, Remove spaces before scientific name, then we decide which records to keep.
+Load-> Open sqlite3, insert cleaned records w/ parameterized query, commit after insertion and close connection. 
 '''
 def load_taxonomy_info(srr_id, kraken_report, db_path):
     """Extract top X ranking taxonomy reports"""
     # Read text file
 
-    with open(kraken_report, 'r', encoding="utf-8") as f:
-        data = f.read()
+    with open(kraken_report, encoding="utf-8") as handle:
+        for line_number, line in enumerate(handle, start=1):
+            print(line_number, repr(line))
