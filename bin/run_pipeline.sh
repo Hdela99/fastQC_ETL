@@ -12,6 +12,7 @@ export PROJECT_ROOT
 # --- Define paths ---
 DATA_DIR="${PROJECT_ROOT}/data/FASTQ/${SRR}"
 REPORT_JSON="${DATA_DIR}/fastp_report.json"
+KRAKEN_REPORT="${DATA_DIR}/kraken_report.txt"
 
 echo "========================================"
 echo "Starting full pipeline for ${SRR}"
@@ -38,6 +39,10 @@ python3 "${PROJECT_ROOT}/src/load_qc_into_db.py" "${SRR}" "${REPORT_JSON}"
 # --- Step 5: (Optional) Run Kraken2 for viral identification ---
  echo "[5/5] Running Kraken2 taxonomic classification..."
  bash "${PROJECT_ROOT}/bin/run_kraken.sh" "${SRR}" "${THREADS}"
+
+# --- Step 6: Load the taxonomy info into the db ---
+ echo "[6/5] Loading Tax info into database..."
+ python3 "${PROJECT_ROOT}/src/load_taxonomy_into_db.py" "${SRR}" "${KRAKEN_REPORT}"
 
 echo "========================================"
 echo "Pipeline finished successfully for ${SRR}"
