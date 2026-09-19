@@ -53,31 +53,12 @@ def load_taxonomy_info(srr_id, kraken_report, db_path):
             tax_id = int(row[4])
             name = row[5].strip()
             #TODO add a filter for the virus
-            rows_to_insert.append(srr_id, tax_id, name, rank, abundance, read_count, "kraken2")
-
-            print(row)
-        conn = sqlite3.connect(db_path)
-        cursor = conn.cursor()
-
-    cursor.execute("""
-        INSERT OR REPLACE INTO taxonomic_abundance (
-            srr_id,
-            tax_id,
-            name,
-            rank,
-            abundance,
-            read_count,
-        ) VALUES (?, ?, ?, ?, ?, ?, "kraken2")
-    """, (
-        srr_id,
-        tax_id,
-        name,
-        rank,
-        abundance,
-        read_count,
-        kraken_report
-    ))
-
+            rows_to_insert.append((srr_id, tax_id, name, rank, abundance, read_count, "kraken2"))
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.executemany("""INSERT INTO taxonomic_abundance (
+    srr_id, tax_id, name, rank, abundance, read_count, tool
+    ) VALUES (?, ?, ?, ?, ?, ?, ?)""", rows_to_insert)
     conn.commit()
     conn.close()
     print(f"Taxonomic abundance for {srr_id} loaded into {db_path}")
